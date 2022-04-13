@@ -13,3 +13,4 @@ export class TrendingComponent implements OnInit {
   }
 
 }
+
