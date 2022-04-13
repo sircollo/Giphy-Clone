@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { GiphyMainComponent } from './giphy-main/giphy-main.component';
 import { SearchComponent } from './search/search.component';
+import { TrendingComponent } from './trending/trending.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     GiphyMainComponent,
-    SearchComponent
+    SearchComponent,
+    TrendingComponent
   ],
   imports: [
     BrowserModule,
