@@ -12,12 +12,22 @@ export class TrendingService {
   constructor(private http: HttpClient){}
 
   getTrendingGifs(gifNumber:any){
-    return this.http.get(`https://api.giphy.com/v1/gifs/trending?api_key=L5QeIMh6hYy1AV3zLvPEMtz8twlE3jbt&limit=25&rating=g`).subscribe((response:any)=>{
+    return this.http.get(`https://api.giphy.com/v1/gifs/trending?api_key=L5QeIMh6hYy1AV3zLvPEMtz8twlE3jbt&limit=6&rating=g`).subscribe((response:any)=>{
       this.gifs.next(response.data)
     })
   }
   getMoreTrendingGifs(){
     return this.http.get(`https://api.giphy.com/v1/gifs/trending?api_key=L5QeIMh6hYy1AV3zLvPEMtz8twlE3jbt&limit=100&rating=g`).subscribe((response:any)=>{
+      this.gifs.next(response.data)
+    })
+  }
+  getRandomGifs(){
+    return this.http.get(`https://api.giphy.com/v1/gifs/random?api_key=L5QeIMh6hYy1AV3zLvPEMtz8twlE3jbt&tag=sports&rating=g`).subscribe((response:any)=>{
+      this.gifs.next(response.data)
+    })
+  }
+  getMoreRandomGifs(){
+    return this.http.get(`https://api.giphy.com/v1/gifs/random?api_key=L5QeIMh6hYy1AV3zLvPEMtz8twlE3jbt&tag=sports&rating=g`).subscribe((response:any)=>{
       this.gifs.next(response.data)
     })
   }
