@@ -16,6 +16,9 @@ img{
 .nav-item:hover{
   background-color: rgb(65, 103, 173);
 }
+.nav-link{
+  font-weight: 800;
+}
 .solid{
   color: white;
   background-color:  rgb(110,107,250);
