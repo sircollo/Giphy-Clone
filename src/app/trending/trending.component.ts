@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { TrendingService } from '../trending-service/trending.service';
+import { Subscription } from 'rxjs';
+
 
 @Component({
   selector: 'app-trending',
@@ -6,10 +9,23 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./trending.component.css']
 })
 export class TrendingComponent implements OnInit {
+  // trending!:Trending
 
-  constructor() { }
+  subscription:Subscription = new Subscription;
+  gifs:any;
 
-  ngOnInit(): void {
+
+
+
+
+  constructor(private trendingService:TrendingService){}
+  
+  ngOnInit(){
+    this.trendingService.getTrendingGifs(10)
+    this.subscription = this.trendingService.getGifs().subscribe((response:any)=>{
+      this.gifs = response;
+    })
+    
   }
 
 }

@@ -4,3 +4,14 @@
 span{
   margin: 10px;
 }
+.col-sm-2{
+  height:100px;
+  /* width: 90px */
+}
+.btn-primary{
+  background-color: purple;
+  border: 0px;
+}
+button{
+  margin-top: 15%;
+}
