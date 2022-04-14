@@ -1,0 +1,50 @@
+.navigation{
+  padding-top: 1%;
+}
+img{
+  height: 35px;
+  width: 164px;
+}
+.nav-item{
+  border-bottom:  2px solid purple;
+  color: white !important;
+  padding-top: 5px;
+  padding-bottom: 0%;
+  margin-right: 6px;
+  margin-bottom: 0px;
+}
+.nav-item:hover{
+  background-color: rgb(65, 103, 173);
+}
+.solid{
+  color: white;
+  background-color:  rgb(110,107,250);
+  width: 100px;
+  text-align: center;
+
+}
+.profile{
+  /* padding-left: 20px; */
+  background-color: rgb(62,62,62);
+  border-bottom: 0px;
+  width: 100px;
+  text-align: center;
+}
+/* .login{
+  margin-left: 50px;
+
+} */
+.profile-icon,.login-name{
+  background-color: rgb(62,62,62);
+  padding-top: 2%;
+  width: 30px;
+  text-align: center;
+}
+.login-name{
+  text-decoration: none;
+  color: white;
+  height: 100px;
+}
+.login{
+  height: 35px;
+}

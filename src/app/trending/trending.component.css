@@ -1,0 +1,17 @@
+.carousel{
+  padding-top: 50px;
+}
+span{
+  margin: 10px;
+}
+.col-sm-2{
+  height:100px;
+  /* width: 90px */
+}
+.btn-primary{
+  background-color: rgb(62,62,62)!important;
+  border: 0px;
+}
+button{
+  margin-top: 15%;
+}

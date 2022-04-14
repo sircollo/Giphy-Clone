@@ -1,0 +1,11 @@
+<div class="container">
+  <div class="input-group">
+    <div class="form-outline">
+      <input type="search" id="search" #gif (keyup.enter)="search(gif.value)" class="form-control" placeholder="Search all the GIFs and Stickers"/>
+    </div>
+    <button type="button" class="btn btn-dark" (click)="search(gif.value)">
+      <i class="fa fa-search" aria-hidden="true"></i>
+    </button>
+  </div>
+  </div>
+  
