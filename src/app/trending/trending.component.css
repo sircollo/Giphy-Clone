@@ -13,35 +13,11 @@ span{
   border: 0px;
 }
 button{
-  margin-top: 15%;
-}
-/* .row{
-  overflow: hidden; 
-} */
-
-/* [class*="col-md-2"]{
-  margin-bottom: -99999px;
-  padding-bottom: 99999px;
-} */
-.img{
-  max-width: 100%;
-  max-height: 60px !important;
-  z-index: -1;
-  padding: 1%;
-/* }
-.flex-container {
-  display: flex;
-  height: 100px;
-  align-items: center;
-  /* background-color: DodgerBlue; */
-  
+  margin-top: 1%;
 }
 
-/* .flex-container > div {
-  background-color: #f1f1f1;
-  width: 100px;
-  margin: 10px;
-  text-align: center;
-  line-height: 60px;
-  font-size: 30px;
-} */
+.carousel-cell{
+  width: 200px;
+  padding: 0px;
+  margin-left: 0px;
+}

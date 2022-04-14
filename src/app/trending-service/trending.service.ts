@@ -12,7 +12,7 @@ export class TrendingService {
   constructor(private http: HttpClient){}
 
   getTrendingGifs(gifNumber:any){
-    return this.http.get(`https://api.giphy.com/v1/gifs/trending?api_key=L5QeIMh6hYy1AV3zLvPEMtz8twlE3jbt&limit=6&rating=g`).subscribe((response:any)=>{
+    return this.http.get(`https://api.giphy.com/v1/gifs/trending?api_key=L5QeIMh6hYy1AV3zLvPEMtz8twlE3jbt&limit=12&rating=g`).subscribe((response:any)=>{
       this.gifs.next(response.data)
     })
   }

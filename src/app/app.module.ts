@@ -12,6 +12,7 @@ import { TrendingComponent } from './trending/trending.component';
 import { TrendingService } from './trending-service/trending.service';
 import { RandomComponent } from './random/random.component';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { IvyCarouselModule } from 'angular-responsive-carousel';
 
 
 @NgModule({
@@ -30,7 +31,8 @@ import { NotFoundComponent } from './not-found/not-found.component';
     BrowserModule,
     AppRoutingModule,
     NgbModule,
-    HttpClientModule
+    HttpClientModule,
+    IvyCarouselModule
   ],
   providers: [TrendingService],
   bootstrap: [AppComponent]
