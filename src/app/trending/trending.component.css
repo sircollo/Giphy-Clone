@@ -13,5 +13,11 @@ span{
   border: 0px;
 }
 button{
-  margin-top: 15%;
+  margin-top: 1%;
+}
+
+.carousel-cell{
+  width: 200px;
+  padding: 0px;
+  margin-left: 0px;
 }
