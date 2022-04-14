@@ -1,31 +1,16 @@
 <div class="container">
   <div class="carousel">
-     <strong><h4><i class="fa fa-line-chart" aria-hidden="true"><span>Trending</span></i></h4></strong> 
-      <!-- <p>trending works!</p> -->
-      <div class="container">            
-              <div class="row">
-                <div class="col-sm-2"  id="gifImage" *ngFor= "let gif of gifs">
-                    <img  [src]="gif.images.downsized.url"  class ="img-fluid gif" alt="Gif image">            
-                </div>
-            </div>
-            <button class="btn btn-primary">See More</button> 
-           </div>
-
-
-
-
-
-
-
-      <!-- <div class="container-fluid">
-        <ngb-carousel>
-          <ng-template ngbSlide *ngFor="let gif of gifs"> 
-            <div class="picsum-img-wrapper col-lg-3 mb-2">
-              <img [src]="gif.images.downsized.url" alt="Random first slide"> 
-            </div>             
-          </ng-template>
-        </ngb-carousel>             
-        </div> -->
+    <strong>
+      <h4><i class="fa fa-line-chart" aria-hidden="true"><span>Trending</span></i></h4>
+    </strong>
+    <!-- <p>trending works!</p> -->
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-2" id="gifImage" *ngFor="let gif of gifs">
+          <img [src]="gif.images.downsized.url" class="img-fluid gif" alt="Gif image">
+        </div>
+      </div>
+      <button class="btn btn-primary" (click)="viewMore()">More Gifs</button>
+    </div>
   </div>
-   
-
+</div>

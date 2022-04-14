@@ -23,3 +23,28 @@ img{
   text-align: center;
 
 }
+.profile{
+  /* padding-left: 20px; */
+  background-color: rgb(62,62,62);
+  border-bottom: 0px;
+  width: 100px;
+  text-align: center;
+}
+/* .login{
+  margin-left: 50px;
+
+} */
+.profile-icon,.login-name{
+  background-color: rgb(62,62,62);
+  padding-top: 2%;
+  width: 30px;
+  text-align: center;
+}
+.login-name{
+  text-decoration: none;
+  color: white;
+  height: 100px;
+}
+.login{
+  height: 35px;
+}

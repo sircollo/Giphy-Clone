@@ -20,6 +20,12 @@ export class TrendingComponent implements OnInit {
 
   constructor(private trendingService:TrendingService){}
   
+  viewMore(){
+    this.trendingService.getMoreTrendingGifs()
+    this.subscription = this.trendingService.getGifs().subscribe((response:any)=>{
+      this.gifs = response;
+    })
+  }
   ngOnInit(){
     this.trendingService.getTrendingGifs(10)
     this.subscription = this.trendingService.getGifs().subscribe((response:any)=>{

@@ -10,6 +10,7 @@ import { GiphyMainComponent } from './giphy-main/giphy-main.component';
 import { SearchComponent } from './search/search.component';
 import { TrendingComponent } from './trending/trending.component';
 import { TrendingService } from './trending-service/trending.service';
+import { RandomComponent } from './random/random.component';
 
 
 @NgModule({
@@ -19,6 +20,7 @@ import { TrendingService } from './trending-service/trending.service';
     GiphyMainComponent,
     SearchComponent,
     TrendingComponent,
+    RandomComponent,
     
     
   ],

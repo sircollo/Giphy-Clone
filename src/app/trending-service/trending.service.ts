@@ -16,6 +16,11 @@ export class TrendingService {
       this.gifs.next(response.data)
     })
   }
+  getMoreTrendingGifs(){
+    return this.http.get(`https://api.giphy.com/v1/gifs/trending?api_key=L5QeIMh6hYy1AV3zLvPEMtz8twlE3jbt&limit=100&rating=g`).subscribe((response:any)=>{
+      this.gifs.next(response.data)
+    })
+  }
   getGifs(){
     return this.gifs.asObservable()
   }
