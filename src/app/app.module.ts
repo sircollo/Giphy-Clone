@@ -11,6 +11,7 @@ import { SearchComponent } from './search/search.component';
 import { TrendingComponent } from './trending/trending.component';
 import { TrendingService } from './trending-service/trending.service';
 import { RandomComponent } from './random/random.component';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 
 @NgModule({
@@ -21,6 +22,7 @@ import { RandomComponent } from './random/random.component';
     SearchComponent,
     TrendingComponent,
     RandomComponent,
+    NotFoundComponent,
     
     
   ],
