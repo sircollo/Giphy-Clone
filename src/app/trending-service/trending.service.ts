@@ -27,9 +27,11 @@ export class TrendingService {
   searchGifs(gifName:string){
     return this.http.get(`https://api.giphy.com/v1/gifs/search?api_key=L5QeIMh6hYy1AV3zLvPEMtz8twlE3jbt&q=laugh&limit=25&offset=0&rating=g&lang=en`).subscribe((response:any)=>{
       this.gifs.next(response.data)
+    },err=>{
+      this.gifs = new BehaviorSubject<any>("Try another Search Item")
+      alert("Try sometimes later")
     })
 
   }
-  
 }
 
