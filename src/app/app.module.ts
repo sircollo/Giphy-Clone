@@ -9,6 +9,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { GiphyMainComponent } from './giphy-main/giphy-main.component';
 import { SearchComponent } from './search/search.component';
 import { TrendingComponent } from './trending/trending.component';
+import { TrendingService } from './trending-service/trending.service';
 
 
 @NgModule({
@@ -27,7 +28,7 @@ import { TrendingComponent } from './trending/trending.component';
     NgbModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [TrendingService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
