@@ -6,6 +6,7 @@ import { TrendingService } from '../trending-service/trending.service';
   styleUrls: ['./search.component.css']
 })
 export class SearchComponent implements OnInit {
+  searchTerm!: string;
 
   constructor(private trendingService:TrendingService) { }
 
@@ -15,6 +16,7 @@ export class SearchComponent implements OnInit {
       this.trendingService.searchGifs(searchTerm);
       console.log(searchTerm)
     }
+    this.searchTerm == ''
   }
 
   ngOnInit(): void {

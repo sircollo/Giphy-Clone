@@ -13,6 +13,7 @@ import { TrendingService } from './trending-service/trending.service';
 import { RandomComponent } from './random/random.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { IvyCarouselModule } from 'angular-responsive-carousel';
+import { GifDetailsComponent } from './gif-details/gif-details.component';
 
 
 @NgModule({
@@ -24,6 +25,7 @@ import { IvyCarouselModule } from 'angular-responsive-carousel';
     TrendingComponent,
     RandomComponent,
     NotFoundComponent,
+    GifDetailsComponent,
     
     
   ],
