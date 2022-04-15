@@ -8,11 +8,11 @@ import { TrendingService } from '../trending-service/trending.service';
 })
 export class GifDetailsComponent implements OnInit {
 
-  constructor(public trendingService:TrendingService) { 
-  this.trendingService.getDetails().subscribe((response:any) => {
+  // constructor(public trendingService:TrendingService) { 
+  // this.trendingService.getDetails().subscribe((response:any) => {
     
-  });
-  }
+  // });
+  // }
   ngOnInit(): void {
 
   }

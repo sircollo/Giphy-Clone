@@ -46,12 +46,12 @@ export class TrendingService {
     })
 
   }
-  public getDetails():Observable<GifDetailsComponent>{
-    const url = `https://api.giphy.com/v1/gifs/aM3tvChhsf7iw?api_key=${environment.trendingAPI}`
-    let queryParams = new HttpParams();
-    queryParams = queryParams.append("gifs",1);
+  // public getDetails():Observable<GifDetailsComponent>{
+  //   const url = `https://api.giphy.com/v1/gifs/aM3tvChhsf7iw?api_key=${environment.trendingAPI}`
+  //   let queryParams = new HttpParams();
+  //   queryParams = queryParams.append("gifs",1);
  
-    return this.http.get<GifDetailsComponent>(url,{params:queryParams});
-  }
+  //   return this.http.get<GifDetailsComponent>(url,{params:queryParams});
+  // }
 }
 
