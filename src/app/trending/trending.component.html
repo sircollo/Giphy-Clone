@@ -6,7 +6,7 @@
     <div class="flex-container">
       <div class="row" >
         <div class="col-md-2"  id="gifImage" *ngFor="let gif of gifs">
-         <a href=""><img [src]="gif.images.downsized.url" class="img-fluid gif" alt="Gif image"></a>
+         <a href="{{gif.url}}"><img [src]="gif.images.downsized.url" class="img-fluid gif" alt="Gif image"></a>
         </div>
       </div>
       <button class="btn btn-primary" (click)="viewMore()">{{btnValue}} </button>

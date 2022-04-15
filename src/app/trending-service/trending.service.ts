@@ -1,9 +1,10 @@
 import { Injectable } from '@angular/core';
 // import { images } from '../trending-gifs';
 import { HttpClient } from '@angular/common/http';
-import { BehaviorSubject } from 'rxjs';
+import { BehaviorSubject, Observable } from 'rxjs';
 import { environment } from 'src/environments/environment';
-
+import { HttpParams } from '@angular/common/http';
+import { GifDetailsComponent } from '../gif-details/gif-details.component';
 @Injectable({
   providedIn: 'root'
 })
@@ -45,5 +46,12 @@ export class TrendingService {
     })
 
   }
+  // public getDetails():Observable<GifDetailsComponent>{
+  //   const url = `https://api.giphy.com/v1/gifs/aM3tvChhsf7iw?api_key=${environment.trendingAPI}`
+  //   let queryParams = new HttpParams();
+  //   queryParams = queryParams.append("gifs",1);
+ 
+  //   return this.http.get<GifDetailsComponent>(url,{params:queryParams});
+  // }
 }
 

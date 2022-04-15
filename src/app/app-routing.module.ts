@@ -1,5 +1,6 @@
 import { Component, NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { GifDetailsComponent } from './gif-details/gif-details.component';
 import { GiphyMainComponent } from './giphy-main/giphy-main.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { RandomComponent } from './random/random.component';
@@ -9,8 +10,9 @@ const routes: Routes = [
   {path: 'trending',component: GiphyMainComponent},
   {path: 'random', component: RandomComponent},
   {path: 'search', component: SearchComponent},
-  {path: '**', component:NotFoundComponent},
+  {path: '**', component:GiphyMainComponent},
   { path: 'gif/:id',component: GiphyMainComponent},
+  {path: 'details/:id', component:GifDetailsComponent},
 
   {path: '', redirectTo:"/trending",pathMatch:"full"}
 ];
