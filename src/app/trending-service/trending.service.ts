@@ -24,7 +24,7 @@ export class TrendingService {
     })
   }
   getRandomGifs(){
-    return this.http.get(`https://api.giphy.com/v1/gifs/random?api_key=${environment.trendingAPI}&tag=sports&rating=g`).subscribe((response:any)=>{
+    return this.http.get(`https://api.giphy.com/v1/gifs/random?api_key=${environment.trendingAPI}&limit=100&tag=sports&rating=g`).subscribe((response:any)=>{
       this.gifs.next(response.data)
     })
   }
@@ -37,7 +37,7 @@ export class TrendingService {
     return this.gifs.asObservable()
   }
   searchGifs(gifName:string){
-    return this.http.get(`https://api.giphy.com/v1/gifs/search?api_key=${environment.trendingAPI}&q=laugh&limit=25&offset=0&rating=g&lang=en`).subscribe((response:any)=>{
+    return this.http.get(`https://api.giphy.com/v1/gifs/search?q=${gifName}&api_key=${environment.trendingAPI}&q=laugh&limit=25&offset=0&rating=g&lang=en`).subscribe((response:any)=>{
       this.gifs.next(response.data)
     },err=>{
       this.gifs = new BehaviorSubject<any>("Try another Search Item")
