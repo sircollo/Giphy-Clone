@@ -20,10 +20,10 @@ export class RandomComponent implements OnInit {
     })
   }
   ngOnInit(){
-    // this.trendingService.getRandomGifs()
-    // this.subscription = this.trendingService.getGifs().subscribe((response:any)=>{
-    //   this.gifs = response;
-    // })
+    this.trendingService.getRandomGifs()
+    this.subscription = this.trendingService.getGifs().subscribe((response:any)=>{
+      this.gifs = response;
+    })
     
   }
 

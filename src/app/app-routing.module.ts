@@ -10,6 +10,7 @@ const routes: Routes = [
   {path: 'random', component: RandomComponent},
   {path: 'search', component: SearchComponent},
   {path: '**', component:NotFoundComponent},
+  { path: 'gif/:id',component: GiphyMainComponent},
 
   {path: '', redirectTo:"/trending",pathMatch:"full"}
 ];

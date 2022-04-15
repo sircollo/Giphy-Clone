@@ -43,11 +43,24 @@ img{
   width: 30px;
   text-align: center;
 }
-.login-name{
-  text-decoration: none;
-  color: white;
-  height: 100px;
+.btn{
+  border-radius: 0%;
+  height: 42px;
 }
 .login{
-  height: 35px;
+  width: 150px;
+  background-color:rgb(70, 66, 66);
+  color: white;
+  font-weight: bold;
+}
+.user{
+  height: 42px;
+  width: 50px;
+  background-color: rgb(117, 110, 110);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 5px;
+
+
 }

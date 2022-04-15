@@ -6,7 +6,7 @@
     <div class="flex-container">
       <div class="row" >
         <div class="col-md-2"  id="gifImage" *ngFor="let gif of gifs">
-          <img [src]="gif.images.downsized.url" class="img-fluid gif" alt="Gif image">
+         <a href=""><img [src]="gif.images.downsized.url" class="img-fluid gif" alt="Gif image"></a>
         </div>
       </div>
       <button class="btn btn-primary" (click)="viewMore()">{{btnValue}} </button>
@@ -14,6 +14,7 @@
   </div>
 </div>
 
+<!-- <a [routeLink]="['gif',id]"></a> -->
 <!-- <div class="container">
   <div class="carousel">
     <strong>
